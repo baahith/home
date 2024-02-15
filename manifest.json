@@ -2,6 +2,7 @@
     "theme_color": "#c9184af",
     "background_color": "#c9184af",
     "display": "fullscreen",
+    "display_override": "window-controls-overlay",
     "scope": "/search/search.html?q=",
     "start_url": "/search/index.html",
     "name": "Hilal Search",
