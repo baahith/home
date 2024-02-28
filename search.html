@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="referrer" content="no-referrer">
-	<meta name="msapplication-TileColor" content="#c9184a">
+	<meta name="msapplication-TileColor" content="#0c63e7">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="theme-color" content="#c9184a">
+	<meta name="theme-color" content="#0c63e7">
 	<link rel="search" type="application/opensearchdescription+xml" title="Hilal" href="https://hilalkids.github.io/search/opensearch.xml">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="apple-touch-icon" sizes="180x180" href="/search/images/favicon-mask.png">
@@ -39,7 +39,7 @@
 
 <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons.css" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Short+Stack" rel="stylesheet">
 
 
     <link href="/manifest.json" rel="manifest">
@@ -80,7 +80,7 @@ window.onload = function() {
 body {
 	font-family: Lexend;
 	font-weight: 400px;
-    	background-color: #dff6ed;
+    	background-color: transparent;
 	min-width: device-width;
 	max-width: device-width;
 	background-image: url("");
@@ -101,8 +101,7 @@ body {
 
 
 #search-icon:hover {
-	background-color: #18c997 !important;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	background-color: #d9d9d9 !important;
 	}
 	
 
@@ -122,16 +121,16 @@ body {
     	font-weight: 200px
     	line-height: 100px;
     	border-style: solid;
-    	border-color: #b1e8d1;
+    	border-color: #ffffff;
 	border-width: 4px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   	}
 
 	
 #search-query:hover {
     	border-style: solid;
-    	border-color: #b1e8d1;
+    	border-color: #0c63e7;
 	border-width: 4px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 	}
 
 
@@ -141,7 +140,7 @@ body {
     	height: 40px;		
     	border: none;
     	font-size: 23px;
-    	font-family: Lexend;
+    	font-family: Short Stack;
     	font-stretch: normal;	
     	font-weight: thin;
     	letter-spacing: normal;
@@ -199,13 +198,13 @@ body {
 	
 /* Use a different font family for search results */
 	.gs-title {
-        	font-family: Lexend;
+        	font-family: Short Stack;
 		}
 
 	
 /* Use a different font family for search results */
 	.gs-snippet {
-        	font-family: Roboto;
+        	font-family: Short Stack;
 		font-size: 16px !important;
 		}
 
@@ -228,7 +227,7 @@ body {
 /* Change the font size of the bolded part of the title */
 	.gs-title b {
 		font-size: 23px !important;
-		font-family: Lexend;
+		font-family: Short Stack;
 		}
 
 	
@@ -251,7 +250,7 @@ body {
 	.gsc-url-bottom {
 		font-weight: normal;
 		display: inline !important;
-		font-family: Roboto;
+		font-family: Short Stack;
 		font-size: 15px !important;
 		}
 
@@ -260,7 +259,7 @@ body {
 	.gsc-url-bottom b {
 		font-weight: normal;
 		display: inline !important;
-		font-family: Roboto;
+		font-family: Short Stack;
 		font-size: 15px !important;
 		}
 
@@ -330,24 +329,26 @@ body {
 	
 /* Change the font size and family of the refinement header */
 	.gsc-refinementHeader {
-		font-family: Lexend;
+		font-family: Short Stack;
         	font-size: 20px !important;
 		}
 
 	
 /* Change the font size and family of the tab header */
 	.gsc-tabHeader {
-		font-family: Lexend;
+		font-family: Short Stack;
         	font-size: 20px !important;
 		font-weight: normal !important;
-		border-radius: 15px !important;
+		border-radius: 50px !important;
 		padding: 8px 12px 8px 12px !important;
 		}
 
 
 /* Change the font size and family of the tab header on hover */
 	.gsc-tabHeader:hover {
-		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) !important;
+		border-style: solid !important;
+		border-color: #0c63e7 !important;
+		border-width: 2px !important;
 		}
   
 
@@ -362,7 +363,7 @@ body {
         	padding: 5px 7.5px;
         	border: 2px solid #1019ab;
        		background-color: #1019ab;
-		font-family: Lexend;
+		font-family: Short Stack;
 		border-radius: 50px;
     		}
 
@@ -407,7 +408,7 @@ body {
    		}
 	a {
   		font-size: 18px;
-  		font-family: Lexend;
+  		font-family: Short Stack;
   		min-width: device-width;
   		max-width: 350px;
 		font-color: #1155cc;
