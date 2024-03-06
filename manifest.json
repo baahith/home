@@ -1,6 +1,6 @@
 {
-    "theme_color": "#c9184a",
-    "background_color": "#c9184a",
+    "theme_color": "#0c63e7",
+    "background_color": "#0c63e7",
     "display": "fullscreen",
     "display_override": "window-controls-overlay",
     "scope": "/search/search.html?q=",
