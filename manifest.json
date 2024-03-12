@@ -6,7 +6,7 @@
     "scope": "/search/search.html?q=",
     "start_url": "/search/index.html",
     "name": "Hilal Search",
-    "short_name": "Hilal",
+    "short_name": "MuslimScout",
     "description": "Halal search engine for kids.",
     "icons": [
         {
