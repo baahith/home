@@ -1,8 +1,8 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-<ShortName>Hilal</ShortName>
-<Description>Hilal: halal search engine for kids</Description>
+<ShortName>MuslimScout</ShortName>
+<Description>MuslimScout: halal search engine for kids</Description>
 <InputEncoding>UTF-8</InputEncoding>
-<Image width="32" height="32" type="image/png">https://hilalkids.github.io/search/images/icon.png</Image>
+<Image width="32" height="32" type="image/png">https://muslimscout.github.io/search/images/icon.png</Image>
 <Url type="text/html" method="GET" template="https://hilalkids.github.io/search/search.html?q={searchTerms}"/>
 <Url type="application/x-suggestions+json" method="GET" template="https://search.brave.com/api/suggest?q={searchTerms}"/>
 </OpenSearchDescription>
