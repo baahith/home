@@ -3,29 +3,29 @@
     "background_color": "#0c63e7",
     "display": "fullscreen",
     "display_override": "window-controls-overlay",
-    "scope": "/search/search.html?q=",
-    "start_url": "/search/index.html",
-    "name": "Hilal Search",
+    "scope": "/home/search.html?q=",
+    "start_url": "/home/index.html",
+    "name": "MuslimScout",
     "short_name": "MuslimScout",
     "description": "Halal search engine for kids.",
     "icons": [
         {
-            "src": "/search/images/icon-192x192.png",
+            "src": "/home/images/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/search/images/icon-256x256.png",
+            "src": "/home/images/icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/search/images/icon-384x384.png",
+            "src": "/home/images/icon-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/search/images/icon-512x512.png",
+            "src": "/home/images/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
