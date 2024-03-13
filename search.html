@@ -29,6 +29,11 @@
 
     <link href="/manifest.json" rel="manifest">
 
+
+<div id="search-container" display>
+
+<img src="/home/images/logo.png" alt="Search" width="359.1" height="49.59" id="Search" class="center">
+	
 <script type="text/javascript">
 	function submitSearch(){
         var siteSearchUrl = '/home/search.html?q=';
@@ -139,6 +144,17 @@ body {
 	}
 
 
+#search-container {
+  	display: flex; /* Make the container a flexbox */
+  	padding-left: 100px; /* Add space for the image */
+	}
+
+	
+#Search {
+  	float: left; /* Position the image to the left */
+	}
+
+	
 @media all and (max-width: 600px) {
 #search-query {
 	min-width: device-width;
