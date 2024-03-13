@@ -7,11 +7,11 @@
 	<meta name="referrer" content="no-referrer" >
 	<meta name="msapplication-TileColor" content="#0c63e7">
 	<meta name="theme-color" content="#0c63e7">
-	<link rel="search" type="application/opensearchdescription+xml" title="MuslimScout" href="https://hilalkids.github.io/search/opensearch.xml">
-	<link rel="apple-touch-icon" sizes="180x180" href="/search/images/favicon-mask.png">
-	<link rel="icon" type="image/png" href="/search/images/favicon.png">
-	<link rel="manifest" crossorigin="use-credentials" href="manifest.json">
-	<link rel="mask-icon" href="/search/images/favicon-mask.png">
+	<link rel="search" type="application/opensearchdescription+xml" title="MuslimScout" href="https://muslimscout.github.io/home/opensearch.xml">
+	<link rel="apple-touch-icon" sizes="180x180" href="/home/images/favicon-mask.png">
+	<link rel="icon" type="image/png" href="/home/images/favicon.png">
+	<link rel="manifest" crossorigin="use-credentials" href="/home/manifest.json">
+	<link rel="mask-icon" href="/home/images/favicon-mask.png">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>MuslimScout</title>
 	<meta name="description" content="MuslimScout"
@@ -35,7 +35,7 @@
 <br>
 <br>
 <br>
-<img src="/search/images/logo.png" alt="Search" width="319.2" height="85.6" id="Search" class="center">
+<img src="/home/images/logo.png" alt="Search" width="319.2" height="85.6" id="Search" class="center">
 
 <br>
 <br>
@@ -46,8 +46,8 @@
 
 <script type="text/javascript">
 	function submitSearch(){
-        var siteSearchUrl = '/search/search.html?q=';
-        var query = document.getElementById("search-query-input").value;
+        var siteSearchUrl = '/home/search.html?q=';
+        var query = document.getElementById("input-box").value;
         var url = siteSearchUrl + query
   if(typeof IE_fix != "defined")
   {
@@ -68,7 +68,7 @@ function searchKeyPress(e){
     return true;
 }
 window.onload = function() {
-  document.getElementById("search-query-input").focus();
+  document.getElementById("input-box").focus();
 };
 
 </script>
@@ -76,6 +76,7 @@ window.onload = function() {
     <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Short+Stack:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
 
 <style>
 
@@ -144,7 +145,7 @@ body {
 	}
 	
 
-#search-query-input {
+#input-box {
 	min-width: 70px;
     	width: 74%;
     	height: 50px;		
@@ -177,8 +178,8 @@ body {
 
         <div id="search-query">
 
-          <img id="search-icon" alt="e" title="Click to get search results" onclick="submitSearch();" src="/search/images/search.svg">
-          <input type="text" id="search-query-input" placeholder="Search for..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
+          <img id="search-icon" alt="e" title="Click to get search results" onclick="submitSearch();" src="/home/images/search.svg">
+          <input type="text" id="input-box" placeholder="Search for..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
 
         </div>
 
@@ -196,7 +197,7 @@ body {
 a {
   	text-align: center;
   	font-size: 18px;
-  	font-family: Short Stack;
+  	font-family: Proxima Nova;
   	min-width: device-width;
   	max-width: 280px;
 	}
