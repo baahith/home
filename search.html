@@ -99,7 +99,7 @@ body {
 	}
 
 
-#search-query {
+#search-box {
     	min-width: device-width;
     	max-width: 600px;
     	width: 100%;
@@ -118,7 +118,7 @@ body {
   	}
 
 	
-#search-query:hover {
+#search-box:hover {
     	border-style: solid;
     	border-color: #0c63e7;
 	border-width: 4px;
@@ -163,7 +163,7 @@ body {
 
 	
 @media all and (max-width: 600px) {
-#search-query {
+#search-box {
 	min-width: device-width;
 	width: 90%;
 	}
@@ -172,9 +172,9 @@ body {
 </head>
 
 <body>
-	<div id="search-query">
+	<div id="search-box">
 		<img id="search-icon" alt="MuslimScout" title="Click to get search results" onclick="submitSearch();" src="/home/images/search.svg">
-		  <input type="text" id="input-box" placeholder="Ask more questions" onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
+		  <input type="text" id="input-box" placeholder="Search..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
         </div>
   </div>
 
