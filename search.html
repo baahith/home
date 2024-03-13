@@ -7,12 +7,12 @@
 	<meta name="referrer" content="no-referrer">
 	<meta name="msapplication-TileColor" content="#0c63e7">
 	<meta name="theme-color" content="#0c63e7">
-	<link rel="search" type="application/opensearchdescription+xml" title="Hilal" href="https://hilalkids.github.io/search/opensearch.xml">
+	<link rel="search" type="application/opensearchdescription+xml" title="MuslimScout" href="https://muslimscout.github.io/home/opensearch.xml">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon" sizes="180x180" href="/search/images/favicon-mask.png">
-	<link rel="icon" type="image/png" href="/search/images/favicon.png">
-	<link rel="manifest" crossorigin="use-credentials" href="manifest.json">
-	<link rel="mask-icon" href="/search/images/favicon-mask.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/home/images/favicon-mask.png">
+	<link rel="icon" type="image/png" href="/home/images/favicon.png">
+	<link rel="manifest" crossorigin="use-credentials" href="/home/manifest.json">
+	<link rel="mask-icon" href="/home/images/favicon-mask.png">
 	<title>MuslimScout</title>
 	<meta name="description" content="MuslimScout"
 	/>
@@ -23,7 +23,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons.css" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Proxima+Nova" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Short+Stack" rel="stylesheet">
 
 
@@ -31,8 +31,8 @@
 
 <script type="text/javascript">
 	function submitSearch(){
-        var siteSearchUrl = '/search/search.html?q=';
-        var query = document.getElementById("search-query-input").value;
+        var siteSearchUrl = '/home/search.html?q=';
+        var query = document.getElementById("input-box").value;
         var url = siteSearchUrl + query
   if(typeof IE_fix != "defined")
   {
@@ -53,7 +53,7 @@ function searchKeyPress(e){
     return true;
 }
 window.onload = function() {
-  document.getElementById("search-query-input").focus();
+  document.getElementById("input-box").focus();
 };
 
 </script>
@@ -62,7 +62,7 @@ window.onload = function() {
 <style>
 	
 body {
-	font-family: Lexend;
+	font-family: Short Stack;
 	font-weight: 400px;
     	background-color: transparent;
 	min-width: device-width;
@@ -119,7 +119,7 @@ body {
 	}
 
 
-#search-query-input {
+#input-box {
     	min-width: 70px;
     	width: 74%;
     	height: 50px;		
@@ -150,8 +150,8 @@ body {
 
 <body>
 	<div id="search-query">
-		<img id="search-icon" alt="Hilal" title="Click to get search results" onclick="submitSearch();" src="/search/images/search.svg">
-		  <input type="text" id="search-query-input" placeholder="Ask more questions" onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
+		<img id="search-icon" alt="MuslimScout" title="Click to get search results" onclick="submitSearch();" src="/home/images/search.svg">
+		  <input type="text" id="input-box" placeholder="Ask more questions" onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
         </div>
 
   </body>
@@ -189,7 +189,7 @@ body {
 	
 /* Use a different font family for search results */
 	.gs-snippet {
-        	font-family: Short Stack !important;
+        	font-family: Proxima Nova !important;
 		font-size: 16px !important;
 		}
 
@@ -235,7 +235,7 @@ body {
 	.gsc-url-bottom {
 		font-weight: normal;
 		display: none !important;
-		font-family: Short Stack;
+		font-family: Proxima Nova;
 		font-size: 15px !important;
 		}
 
@@ -244,7 +244,7 @@ body {
 	.gsc-url-bottom b {
 		font-weight: normal;
 		display: none !important;
-		font-family: Short Stack;
+		font-family: Proxima Nova;
 		font-size: 15px !important;
 		}
 
@@ -362,7 +362,7 @@ body {
 				<div>
 					<div>
 						<div>
-	<img src="/search/images/logo.png" alt="Hilal" width="159.6" height="42.8" id="logo" class="center">
+	<img src="/home/images/logo.png" alt="Hilal" width="159.6" height="42.8" id="logo" class="center">
 							<br>
 <div style="text-align: center;">
   <a href="https://sites.google.com/view/muslimscout/install" target="_blank" display:inline-block margin: 0 auto;">Install the MuslimScout app to your device</a>
@@ -385,7 +385,7 @@ body {
    		}
 	a {
   		font-size: 18px;
-  		font-family: Short Stack;
+  		font-family: Proxima Nova;
   		min-width: device-width;
   		max-width: 350px;
 		font-color: #1155cc;
