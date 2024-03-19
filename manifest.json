@@ -31,17 +31,6 @@
             "src": "/home/images/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-    "shortcuts": [
-          {
-        "name": "Start a search",
-         "short_name": "Start a search",
-        "url": "/feed",
-            "description": "Start searching",
-    "icons": [
-      {
-        "src": "/home/images/icon.png",
-        "type": "image/png",
-        "purpose": "any"
         }
     ]
 }
