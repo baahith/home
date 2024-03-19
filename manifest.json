@@ -2,7 +2,10 @@
     "theme_color": "#0c63e7",
     "background_color": "#0c63e7",
     "display": "fullscreen",
-    "display_override": "fullscreen",
+    "display_override": [
+        "minimal-ui",
+        "window-controls-overlay"
+        ],    
     "scope": "/home/search.html?q=",
     "start_url": "/home/index.html",
     "name": "MuslimScout",
