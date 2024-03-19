@@ -32,5 +32,12 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+  "shortcuts": [
+    {
+      "name": "Start searching",
+      "url": "https://muslimscout.github.io/home",
+      "description": "Initiate a new search"
+    }
+  ]
 }
