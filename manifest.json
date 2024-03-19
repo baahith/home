@@ -32,5 +32,18 @@
             "sizes": "512x512",
             "type": "image/png"
         }
+         ],
+  "id": "islam",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "natural",
+  "prefer_related_applications": false,
+  "categories": [
+    "education",
+    "kids",
+    "utilities"
+  ],
+  "share_target": {
+    "method": "GET"
     ]
 }
