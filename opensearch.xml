@@ -2,7 +2,7 @@
 <ShortName>MuslimScout</ShortName>
 <Description>MuslimScout: halal search engine for kids</Description>
 <InputEncoding>UTF-8</InputEncoding>
-<Image width="32" height="32" type="image/png">https://muslimscout.github.io/home/images/icon.png</Image>
+<Image width="16" height="16" type="image/png">https://muslimscout.github.io/home/images/icon.png</Image>
 <Url type="text/html" method="GET" template="https://muslimscout.github.io/home/search.html?q={searchTerms}"/>
-<Url type="application/x-suggestions+json" method="GET" template="https://search.brave.com/api/suggest?q={searchTerms}"/>
+<moz:SearchForm>https://muslimscout.github.io/home</moz:SearchForm>
 </OpenSearchDescription>
