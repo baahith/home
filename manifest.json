@@ -1,6 +1,6 @@
 {
-    "theme_color": "#00d086",
-    "background_color": "#00d086",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone",
     "display_override": [
         "fullscreen",
