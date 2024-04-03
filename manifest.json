@@ -9,6 +9,7 @@
     "scope": "/home/search.html?q=",
     "start_url": "/home/index.html",
     "name": "MuslimScout",
+    "version": "0.1",
     "short_name": "MuslimScout",
     "description": "Halal search engine for kids.",
     "icons": [
