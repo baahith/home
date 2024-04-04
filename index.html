@@ -23,23 +23,14 @@
 
 <img src="/home/images/logo-vertical.png" alt="Search" id="Search" class="center">
 
-
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('/home/serviceworker.js')
+  }
+</script>
 
 
 <script type="text/javascript">
-
-	if (navigator.serviceWorker.controller) {
-    console.log("Active service worker found");
-    } else {
-        navigator.serviceWorker
-        .register("/home/serviceWorker.js", {
-        scope: "./"
-        })
-        .then(function (reg) {
-        console.log("Service worker  registered);
-        });
-    }
-}
 
 	
 	function submitSearch(){
