@@ -27,6 +27,20 @@
 
 
 <script type="text/javascript">
+
+	if (navigator.serviceWorker.controller) {
+    console.log("Active service worker found");
+    } else {
+        navigator.serviceWorker
+        .register("/home/serviceWorker.js", {
+        scope: "./"
+        })
+        .then(function (reg) {
+        console.log("Service worker  registered);
+        });
+    }
+}
+	
 	function submitSearch(){
         var siteSearchUrl = '/home/search.html?q=';
         var query = document.getElementById("input-box").value;
