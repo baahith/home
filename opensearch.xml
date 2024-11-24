@@ -1,8 +1,0 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-<ShortName>MuslimScout</ShortName>
-<Description>MuslimScout: halal search engine for kids</Description>
-<InputEncoding>UTF-8</InputEncoding>
-<Image width="16" height="16" type="image/png">https://muslimscout.github.io/home/images/icon.png</Image>
-<Url type="text/html" method="GET" template="https://muslimscout.github.io/home/search.html?q={searchTerms}"/>
-<moz:SearchForm>https://muslimscout.github.io/home</moz:SearchForm>
-</OpenSearchDescription>
