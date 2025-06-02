@@ -1,0 +1,20 @@
+{
+  "name": "Bahith",
+  "short_name": "Bahith",
+  "start_url": "/home/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "scope": "/home/index.html""/home/search.html",
+  "icons": [
+    {
+      "src": "/home/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/home/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
