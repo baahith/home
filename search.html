@@ -17,15 +17,7 @@
 
 <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons.css" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Short+Stack" rel="stylesheet">
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/home/sw.js')
-      .then(reg => console.log('Service Worker registered:', reg))
-      .catch(err => console.error('Service Worker registration failed:', err));
-  }
-</script>
 
 <div id="search-container" display="flex">
 
@@ -66,7 +58,7 @@ window.onload = function() {
 <style>
 	
 body {
-	font-family: Short Stack;
+	font-family: Roboto;
 	font-weight: 400px;
     	background-color: #ffffff;
     	background-image: url("");
@@ -139,7 +131,7 @@ body {
     	height: 50px;		
     	border: none;
     	font-size: 31px;
-    	font-family: Short Stack;
+    	font-family: Roboto;
     	font-stretch: normal;	
     	font-weight: thin;
     	letter-spacing: normal;
@@ -224,7 +216,7 @@ body {
 	
 /* Use a different font family for search results */
 	.gs-title {
-        	font-family: Short Stack !important;
+        	font-family: Roboto !important;
 		font-size: 30px !important;
 		font-weight: bold;
 		}
@@ -268,7 +260,7 @@ body {
 /* Change the font size of the bolded part of the title */
 	.gs-title b {
 		font-size: 30px !important;
-		font-family: Short Stack !important;
+		font-family: Roboto !important;
 		}
 
 	
@@ -281,7 +273,7 @@ body {
 	
 /* Enable underlining on hover for the title */
 	.gs-spelling {
- 		font-family: Short Stack !important;
+ 		font-family: Roboto !important;
 		font-size: 25px !important;
 		padding: 10px 0 0 0 !important;
 		}
@@ -378,20 +370,20 @@ body {
 	.gs-title {
         	font-size: 30px !important;
         	line-height: 35px;   
-		font-family: Short Stack !important;
+		font-family: Roboto !important;
 		}
 
 	
 /* Change the font size and family of the refinement header */
 	.gsc-refinementHeader {
-		font-family: Short Stack;
+		font-family: Roboto;
         	font-size: 20px !important;
 		}
 
 	
 /* Change the font size and family of the tab header */
 	.gsc-tabHeader {
-		font-family: Short Stack;
+		font-family: Roboto;
         	font-size: 20px !important;
 		font-weight: normal !important;
 		border-radius: 50px !important;
@@ -414,7 +406,7 @@ body {
 /* Highlight the pagination buttons at the bottom of search results */
 	.gsc-cursor-page {
         	padding: 5px 7.5px;
-		font-family: Short Stack;
+		font-family: Roboto;
 		font-size: 20px !important;
 		border-radius: 50px;
 		border-style: solid !important;
