@@ -18,6 +18,13 @@
 <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons.css" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/home/sw.js')
+      .then(reg => console.log('Service Worker registered:', reg))
+      .catch(err => console.error('Service Worker registration failed:', err));
+  }
+</script>
 
 <div id="search-container" display="flex">
 
