@@ -1,9 +1,9 @@
 const CACHE_NAME = 'pwa-cache-v1';
 const ASSETS_TO_CACHE = [
   '/home/',
+  '/home/search.html',
   '/home/index.html',
   '/home/manifest.json',
-  '/script.js',
   '/images/icon-96x96.png',
   '/images/icon-72x72.png',
   '/images/icon-512x512.png',
