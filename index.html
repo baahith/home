@@ -165,8 +165,10 @@ window.onload = function() {
 
     <br><br>
     <div style="text-align: center;">
-        <a href="https://sites.google.com/view/muslimscout" target="_blank" display:inline-block margin: 0 auto;">Learn more about Al-Baahith</a>
-    </div>
+  <button id="install-btn" style="font-size: 20px; font-family: 'Proxima Nova'; padding: 10px 20px; border-radius: 50px; cursor: pointer;">
+    Install Bahith App
+  </button>
+</div>
 
     <style>
 a {
@@ -194,5 +196,35 @@ a:hover {
 	min-width: device-width !important;
 	max-width: 250px !important;
    	}    </style>
+
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('install-btn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent Chrome from showing its mini-infobar
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'inline-block';
+  });
+
+  installBtn.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null;
+    }
+  });
+
+  // Hide the install button by default
+  installBtn.style.display = 'none';
+</script>
+	
+	
 </body>
 </html>
