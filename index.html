@@ -16,15 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/home/sw.js')
-      .then(reg => console.log('Service Worker registered:', reg))
-      .catch(err => console.error('Service Worker registration failed:', err));
-  }
-</script>
-
-
     <style>
 body {
 	margin: 0;
@@ -165,13 +156,13 @@ window.onload = function() {
 
     <br><br>
     <div style="text-align: center;">
-  <button id="install-btn" style="font-size: 20px; font-family: 'Proxima Nova'; padding: 10px 20px; border-radius: 50px; cursor: pointer;">
-    Install Bahith App
-  </button>
+  <a href="https://sites.google.com/view/muslimscout" target="_blank" display:inline-block margin: 0 auto;">
+    Learn more about Al-Baahith
+  </a>
 </div>
 
     <style>
-install-btn {
+a {
   	text-align: center;
   	font-size: 20px;
   	font-family: Roboto;
@@ -181,7 +172,7 @@ install-btn {
 	}
 
 
-install-btn:hover {
+a:hover {
 	text-decoration: none;
 	background-color: #d9d9d9 !important;
 	border-radius: 50px;
@@ -197,30 +188,6 @@ install-btn:hover {
 	max-width: 250px !important;
    	}    </style>
 
-<script>
-  let deferredPrompt;
-  const installBtn = document.getElementById('install-btn');
-
-  window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent Chrome from showing its mini-infobar
-    e.preventDefault();
-    deferredPrompt = e;
-    installBtn.style.display = 'inline-block';
-  });
-
-  installBtn.addEventListener('click', async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        console.log('User accepted the install prompt');
-      } else {
-        console.log('User dismissed the install prompt');
-      }
-      deferredPrompt = null;
-    }
-  });
-</script>
 	
 	
 </body>
