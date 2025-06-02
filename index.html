@@ -169,6 +169,24 @@ window.onload = function() {
   </a>
 </div>
 
+	<button id="install-btn">Install Hilal Search</button>
+
+	<script>
+		let deferredPrompt;
+const installBtn = document.getElementById('install-btn');
+installBtn.style.display = 'none';
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'inline-block';
+});
+
+installBtn.addEventListener('click', () => {
+  deferredPrompt.prompt();
+});
+	</script>
+	
     <style>
 a {
   	text-align: center;
