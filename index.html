@@ -29,7 +29,7 @@ body {
 	margin: 0;
     	padding: 14px 6px 0 6px;
     	font-family: 'Roboto Flex';
-	background-color: #ffffff;
+	background-color: #000000;
     	background-image: url("");
 	background-repeat: repeat-x;
 	background-size: 100%;
@@ -86,14 +86,13 @@ body {
 	border-style: solid;
     	border-color: #ffffff;
 	border-width: 4px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 	height: 62.5px;
 	}
 
 	
 #search-query:hover {
     	border-style: solid;
-    	border-color: #00d086;
+    	border-color: #8B8B8B;
 	border-width: 4px;
 	}
 	
@@ -159,7 +158,7 @@ window.onload = function() {
 
     <div id="search-query">
         <img id="search-icon" alt="e" title="Get Search Results" onclick="submitSearch();" src="https://albaahith.github.io/home/images/search.svg">
-        <input type="text" id="input-box" placeholder="Search" onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
+        <input type="text" id="input-box" placeholder="Ask me about..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none; font-size:25px";>
     </div>
 
     <br><br>
@@ -195,7 +194,8 @@ a {
   	font-family: Roboto Flex;
   	min-width: device-width;
   	max-width: 320px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 20px 10px 20px;
+    	color: #ffffff;
 	}
 
 
@@ -203,7 +203,9 @@ a:hover {
 	text-decoration: none;
 	background-color: #d9d9d9 !important;
 	border-radius: 50px;
+    	color: #000000;
 	}
+
 
 .container {
       text-align: center;
@@ -218,6 +220,7 @@ a:hover {
 	padding: 10px 10px 10px 10px;
 	display: inline-block;
 	margin: 0 auto;
+	display: none !important;
 }
 
 #install-btn:hover {
