@@ -67,7 +67,7 @@ window.onload = function() {
 body {
 	font-family: Roboto;
 	font-weight: 400px;
-    	background-color: #ffffff;
+    	background-color: #000000;
     	background-image: url("");
   	background-position: top;
 	background-size: 100%;
@@ -81,7 +81,6 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	overscroll-behavior: none;
-	scrollbar-color: #00d086 #ffffff;
 	scrollbar-width: auto;
 	}
 
@@ -120,14 +119,13 @@ body {
     	border-style: solid;
     	border-color: #ffffff;
 	border-width: 4px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 	height: 62.5px;
   	}
 
 	
 #search-box:hover {
     	border-style: solid;
-    	border-color: #00d086;
+    	border-color: #8B8B8B;
 	border-width: 4px;
 	}
 
@@ -190,7 +188,7 @@ body {
 <body>
 	<div id="search-box">
 		<img id="search-icon" alt="Al-Baahith" title="Click to get search results" onclick="submitSearch();" src="/home/images/search.svg">
-		  <input type="text" id="input-box" placeholder="Search..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none";>
+        <input type="text" id="input-box" placeholder="Ask me about..." onkeypress="return searchKeyPress(event);" autocomplete="off" style="box-shadow:none; font-size:25px";>
         </div>
   </div>
 
