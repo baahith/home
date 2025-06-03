@@ -169,8 +169,9 @@ window.onload = function() {
   </a>
 </div>
 
-	<button id="install-btn">Install Hilal Search</button>
-
+<div class="container">
+    <button id="install-btn">Install Hilal Search</button>
+  </div>
 	<script>
 		let deferredPrompt;
 const installBtn = document.getElementById('install-btn');
@@ -204,6 +205,10 @@ a:hover {
 	border-radius: 50px;
 	}
 
+.container {
+      text-align: center;
+    }
+	    
 #install-btn {
 	text-align: center;
   	font-size: 20px;
@@ -213,7 +218,6 @@ a:hover {
 	padding: 10px 10px 10px 10px;
 	display: inline-block;
 	margin: 0 auto;
-	text-align: center;
 }
 
 #install-btn:hover {
