@@ -75,14 +75,13 @@ body {
 	background-repeat: repeat-x;	
 	min-width: device-width;
 	max-width: device-width;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	overscroll-behavior: none;
-	scrollbar-width: auto;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+	overscroll-behavior: none !important;
 	}
 
 
@@ -94,6 +93,7 @@ body {
 	text-align: start;
 	border-radius: 50px;
 	cursor: pointer;
+	transition: background-color 0.2s ease;
 	}
 
 
@@ -121,13 +121,12 @@ body {
     	border-color: #ffffff;
 	border-width: 4px;
 	height: 62.5px;
+	transition: border-color 0.2s ease;
   	}
 
 	
 #search-box:hover {
-    	border-style: solid;
     	border-color: #8B8B8B;
-	border-width: 4px;
 	}
 
 
@@ -169,13 +168,12 @@ body {
 	width: 40px;
 	border-radius: 50px;
 	margin-right: 10px;
+	transition: background-color 0.2s ease;
 	}
 
 
 #Search:hover {
 	background-color: #6b6b6b;
-	border-radius: 50px;
-	margin-right: 10px;
 	}
 	
 	
