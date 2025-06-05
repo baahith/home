@@ -1,6 +1,6 @@
 {
-  "name": "Bahith",
-  "short_name": "Bahith",
+  "name": "FatwaFinder",
+  "short_name": "FatwaFinder",
   "description": "Online Fatwa Search Engine",
   "start_url": "/home/index.html",
   "scope": "/home/",
